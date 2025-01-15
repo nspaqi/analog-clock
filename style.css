@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.clock {
+  position: relative;
+  width: 27vw; 
+  height: 27vw; 
+  max-width: 500px; 
+  max-height: 500px; 
+  border: 17px solid #333;
+  border-radius: 50%;
+  background: radial-gradient(circle, #065885 50%, #850628  100%);
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-clock-face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  height: 85%;
+  transform: translate(-50%, -50%);
+  background-color: #065885 ;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.marking {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.marking-one {
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.marking-two {
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.marking-three {
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.marking-four {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hand {
+  position: absolute;
+  background: #777;
+  transform-origin: bottom;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.7s ease-in-out;
+}
+
+.hour-hand {
+  width: 4px;
+  height: 20%;
+  max-height: 60px;
+  border-radius: 4px;
+  background: #007;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+}
+
+.min-hand {
+  width: 3px;
+  height: 30%;
+  max-height: 90px;
+  border-radius: 3px;
+  background: #0aee1d;
+  box-shadow: 0 0 7px rgba(7, 7, 7, 0.7);
+}
+
+.second-hand {
+  width: 2px;
+  height: 40%;
+  max-height: 100px;
+  border-radius: 2px;
+  background: red;
+  box-shadow: 0 0 7px rgba(247, 7, 7, 0.7);
+}
