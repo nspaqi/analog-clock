@@ -43,7 +43,7 @@ The script selects the HTML elements representing the clock hands:
 `Then, it applies a CSS transform to rotate each hand based on the calculated angles:`
 
 
-hrHand.style.transform = `translate(-50%, 0) rotate(${hrRotation}deg)`;
+`hrHand.style.transform` `=` `translate(-50%, 0) rotate(${hrRotation}deg)`;
 
 mnHand.style.transform = `translate(-50%, 0) rotate(${minRotation}deg)`;
 
