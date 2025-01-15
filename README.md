@@ -10,7 +10,7 @@ getMinutes(): Gets the current minutes.
 getSeconds(): Gets the current seconds.
 
 #### 2. Calculate Rotation Degrees
-The code calculates the rotation angle for each clock hand (hour, minute, and second) based on the current time:
+The code calculates the rotation angle for each clock hand (hour, minute and second) based on the current time:
 
 Hour Hand:
 
