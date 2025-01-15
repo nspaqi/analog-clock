@@ -40,14 +40,14 @@ The script selects the HTML elements representing the clock hands:
 
 `const scHand = document.querySelector('.second-hand');`
 
-`Then, it applies a CSS transform to rotate each hand based on the calculated angles:`
+Then, it applies a CSS transform to rotate each hand based on the calculated angles:
 
 
 `hrHand.style.transform` `=` `translate(-50%, 0) rotate(${hrRotation}deg)`;
 
-mnHand.style.transform = `translate(-50%, 0) rotate(${minRotation}deg)`;
+`mnHand.style.transform` `=` `translate(-50%, 0) rotate(${minRotation}deg)`;
 
-scHand.style.transform = `translate(-50%, 0) rotate(${secRotation}deg)`;
+`scHand.style.transform` `=` `translate(-50%, 0) rotate(${secRotation}deg)`;
 
 #### 4. Update Every Second
 The setInterval function ensures the clock updates every second:
