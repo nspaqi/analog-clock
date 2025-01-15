@@ -34,10 +34,10 @@ This updates the second hand every second.
 The script selects the HTML elements representing the clock hands:
 
 
-`const hrHand = document.querySelector('.hour-hand'); 
-const mnHand = document.querySelector('.min-hand'); 
-const scHand = document.querySelector('.second-hand');
-Then, it applies a CSS transform to rotate each hand based on the calculated angles:`
+`const hrHand = document.querySelector('.hour-hand');`
+`const mnHand = document.querySelector('.min-hand');`
+`const scHand = document.querySelector('.second-hand');`
+`Then, it applies a CSS transform to rotate each hand based on the calculated angles:`
 
 
 hrHand.style.transform = `translate(-50%, 0) rotate(${hrRotation}deg)`;
